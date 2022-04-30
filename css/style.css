@@ -1,8 +1,12 @@
 * {
     font-family: "Fira Code", monospace;
-    text-align: center;
-    background: black;
+}
+
+body {
+    margin: 0;
     overflow: hidden;
+    background: black;
+    text-align: center;
 }
 
 #main {
@@ -44,4 +48,16 @@ a.d {
 a:hover {
     color: gray;
     transition-duration: 250ms;
+}
+
+#globe {
+    margin: 0;
+}
+
+canvas {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    height: 75%;
+    margin: 0;
 }
