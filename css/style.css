@@ -1,9 +1,27 @@
 * {
     font-family: "Fira Code", monospace;
     text-align: center;
+    background: black;
+    overflow: hidden;
 }
 
 #main {
+    color: white;
     opacity: 0;
     transition: .25s;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+}
+
+h2 {
+    margin: 0;
+    color: gray;
+}
+
+h3 {
+    color: white;
+    margin: 0;
 }
