@@ -1,5 +1,9 @@
+let pins = [
+    {lat: 28.6024, lon: -81.2001, t: "Orlando"},
+]
+
 globe = new ENCOM.Globe(window.innerWidth, window.innerHeight, {
-    font: "Inconsolata",
+    font: "Fira Code",
     data: [],
     tiles: grid.tiles,
     baseColor: "#000000",
@@ -26,4 +30,7 @@ function animate() {
 let start = () => {
     globe.init();
     animate();
+
+    for (p of pins)
+        globe.addPin(p.lat, p.lon, p.t);
 }
