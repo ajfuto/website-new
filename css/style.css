@@ -1,3 +1,9 @@
 * {
     font-family: "Fira Code", monospace;
+    text-align: center;
+}
+
+#main {
+    opacity: 0;
+    transition: .25s;
 }

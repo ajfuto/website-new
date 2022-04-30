@@ -23,6 +23,11 @@ let next = () => {
 
 	if (i < text.length) {
 		setTimeout(next, curr.ms);
+	} else {
+		setTimeout(() => {
+			document.getElementById("main").style.opacity = 1;
+		}, 250);
+		
 	}
 }
 
