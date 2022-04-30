@@ -26,6 +26,7 @@ let next = () => {
 	} else {
 		setTimeout(() => {
 			document.getElementById("main").style.opacity = 1;
+			start();
 		}, 250);
 		
 	}

@@ -15,7 +15,6 @@ globe = new ENCOM.Globe(window.innerWidth, window.innerHeight, {
 });
 
 document.getElementById("globe").appendChild(globe.domElement);
-globe.init(start);
 
 function animate() {
     if (globe)
@@ -24,7 +23,7 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-function start() {
+let start = () => {
     globe.init();
     animate();
 }
