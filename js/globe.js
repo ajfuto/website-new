@@ -2,7 +2,7 @@ let pins = [
 	{lat: 28.6024, lon: -81.2001, t: "Orlando"},
 ]
 
-globe = new ENCOM.Globe(window.innerWidth, window.innerHeight, {
+globe = new ENCOM.Globe(window.innerWidth, (window.innerHeight - main.clientTop - main.clientHeight), {
 	font: "Fira Code",
 	data: [],
 	tiles: grid.tiles,
@@ -12,7 +12,7 @@ globe = new ENCOM.Globe(window.innerWidth, window.innerHeight, {
 	satelliteColor: "#8892b0",
 	scale: 1,
 	dayLength: 10000,
-	introLinesDuration: 1000,
+	introLinesDuration: 1500,
 	maxPins: 100,
 	maxMarkers: 5,
 	viewAngle: 0.1
@@ -36,7 +36,7 @@ let start = () => {
 }
 
 window.addEventListener("resize", () => {
-	let h = window.innerHeight - main.clientTop + main.clientHeight;
+	let h = window.innerHeight - main.clientTop - main.clientHeight;
 	globe.camera.aspect = window.innerWidth / h;
 	globe.camera.updateProjectionMatrix();
 	globe.renderer.setSize(window.innerWidth, h);

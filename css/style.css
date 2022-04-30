@@ -58,6 +58,4 @@ canvas {
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
-    height: 75%;
-    margin: 0;
 }
